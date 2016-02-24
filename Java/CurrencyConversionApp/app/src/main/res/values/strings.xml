@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Currency Conversion App</string>
+    <string name="action_settings">Settings</string>
+    <string name="mainTitleText">Currency Conversion App</string>
+    <string name="baseAmountHintText">Enter Amount in US Dollars</string>
+    <string name="convertButtonText">Convert</string>
+    <string name="euroButtonText">Euros</string>
+    <string name="pesoButtonText">Mexican Pesos</string>
+    <string name="canadaButtonText">Canadian Dollars</string>
+    <string name="convertedAmountTitleText">Converted Amount:</string>
+    <string name="amountFailText">You must enter an amount less than $100,000.</string>
+</resources>

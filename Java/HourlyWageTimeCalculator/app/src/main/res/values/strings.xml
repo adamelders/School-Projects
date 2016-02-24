@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Hourly Wage Time Calculator</string>
+    <string name="action_settings">Settings Test</string>
+    <string name="mainTitleText">Hourly Wage Time Calculator</string>
+    <string name="newSessionButtonText">Start New Session</string>
+    <string name="mainORText">OR</string>
+    <string name="prevSessionButtonText">View Previous Sessions</string>
+    <string name="title_activity_new_session">New Session</string>
+    <string name="startButtonText">Start</string>
+    <string name="stopButtonText">Stop</string>
+    <string name="clearButtonText">CLEAR TIMER</string>
+    <string name="timerStartedText">Timer started.</string>
+    <string name="timerStoppedText">Timer stopped.</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_settings">Settings</string>
+    <string name="preference_settings_defaultValue">10.00</string>
+    <string name="preference_settings_wageAmtKey">defaultWageAmt</string>
+    <string name="preference_settings_setRateTitle">Set hourly rate/wage</string>
+    <string name="totalChargeText">Total Charge:</string>
+    <string name="atText">at</string>
+</resources>
