@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Playlist App</string>
+    <string name="splashTitleText">My Playlist App</string>
+    <string name="songKozeText">DJ Koze</string>
+    <string name="songFlightTitleText">Flight of the Conchords</string>
+    <string name="songLedZepTitleText">Led Zeppelin</string>
+    <string name="songKozeName">Le Smou</string>
+    <string name="songFlightName">Hiphopopotamus vs. Rhymenocerous</string>
+    <string name="songLedZepName">Babe I\'m Gonna Leave You</string>
+    <string name="pauseMusic">Pause</string>
+</resources>
