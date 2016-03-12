@@ -17,8 +17,13 @@ namespace ProgressBarExample
         {
             for (int i = 1; i <= 100; i++)
             {
-                Thread.Sleep(100);
-                backgroundWorker1.ReportProgress(i);
+                if (!backgroundWorker1.CancellationPending)
+                {
+                    Thread.Sleep(100);
+                    backgroundWorker1.ReportProgress(i);
+                }
+                else
+                    e.Cancel = true;
             }
         }
 
@@ -29,7 +34,7 @@ namespace ProgressBarExample
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void startButton_Click(object sender, EventArgs e)
         {
             if (!backgroundWorker1.IsBusy)
             {
@@ -37,7 +42,12 @@ namespace ProgressBarExample
                 backgroundWorker1.RunWorkerAsync();
             }
             else
-                MessageBox.Show("Can't run the process twice, please wait!");
+                MessageBox.Show("Can't run the process again until finished, please wait!");
+        }
+
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+            backgroundWorker1.CancelAsync();
         }
 
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
