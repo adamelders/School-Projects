@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item android:drawable="@drawable/albania" android:duration="750" />
+    <item android:drawable="@drawable/australia" android:duration="750" />
+    <item android:drawable="@drawable/germany" android:duration="750" />
+    <item android:drawable="@drawable/southkorea" android:duration="750" />
+    <item android:drawable="@drawable/uk" android:duration="750" />
+    <item android:drawable="@drawable/usa" android:duration="750" />
+    <item android:drawable="@drawable/man" android:duration="750" />
+
+</animation-list>

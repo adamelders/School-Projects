@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Limerick App</string>
+    <string name="limerickTitleText">Coding Limerick</string>
+    <string name="cityNameText">City Name</string>
+    <string name="occupationText">Occupation</string>
+    <string name="numberText">Number</string>
+    <string name="verbText">Action Verb</string>
+    <string name="createButtonText">Create Limerick</string>
+    <string name="title_activity_limerick">LimerickActivity</string>
+    <string name="limerickTitleText2">Coding Limerick</string>
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Dark Souls 3 App</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="txtDs3">DARK SOULS III</string>
+    <string name="txtWikidot">Wikidot Wiki</string>
+    <string name="txtFextralife">Fextralife Wiki</string>
+    <string name="txtSteam">Dark Souls 3 on Steam</string>
+    <string name="txtDs3Site">Dark Souls 3 Official Site</string>
+    <string name="txtReddit">Dark Souls 3 Reddit</string>
+    <string name="txtDs3Desc">Dark Souls III</string>
+</resources>

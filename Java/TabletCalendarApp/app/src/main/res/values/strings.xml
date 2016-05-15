@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Tablet Calendar App</string>
+    <string name="imgShell">Shell Island</string>
+    <string name="txtTitle">Shell Island Resort - Wrightsville Beach, NC</string>
+    <string name="txtDescription">Shell Island is the premier resort hotel at Wrightsville Beach, NC
+        providing all oceanfront suites with 169 beautiful guest rooms, each overlooking the Atlantic
+        Ocean. With an indoor and outdoor pool, jacuzzi, beach volleyball, and miles of white sandy
+        beaches, Shell Island Resort is a wonderful place to come and relax while enjoying the sound
+        of the waves. With all the amenities, and a casual
+        oceanfront restaurant and bar complete with outdoor seating, a fitness room, and laundry
+        facilities on site, you will see why our guests love to stay with us.</string>
+    <string name="btnDate">Set a Reservation Date</string>
+</resources>

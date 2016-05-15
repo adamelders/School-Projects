@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow>
+        <ImageView
+            android:id="@+id/imgDs3"
+            android:contentDescription="@string/txtDs3Desc"
+            android:layout_height="600dp"
+            android:layout_width="900dp"
+            android:src="@drawable/ds3"
+            android:padding="15sp"
+        />
+    </TableRow>
+        <TableRow>
+        <TextView
+            android:layout_width="700dp"
+            android:layout_height="wrap_content"
+            android:text="@string/txtDs3"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:paddingEnd="40sp"/>
+        </TableRow>
+</TableLayout>

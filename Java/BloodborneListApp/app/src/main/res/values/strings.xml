@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Bloodborne List App</string>
+    <string name="action_settings">Settings</string>
+    <string name="secretsTitleText">Hints and Secrets</string>
+    <string name="hintsTitleText"><u>Gameplay Hints</u></string>
+    <string name="secretsInfoTitleText"><u>Secrets</u></string>
+    <string name="secretsText1">Illusory Walls - Illusionary walls can be opened by swinging your weapon into a wall, similar to Dark Souls. Illusory walls are only found in Chalice Dungeons.</string>
+    <string name="hintsText1">It is possible to recover health back from enemies after they are dead (if the orange recover meter is still up), if you keep swinging at them, you will continue to get health while they complete their dying animations (getting knocked back sometimes prevents this).</string>
+    <string name="hintsText2">If you are lost and can\'t find a missed path, Shining Coins come in real handy. When used, the shine on them will point you in the direction you need to go.</string>
+    <string name="secretText2">Scurrying Beasts - Scurrying Beasts are non-aggressive enemies that drop special materials if you can defeat them before they run away and vanish.</string>
+</resources>
