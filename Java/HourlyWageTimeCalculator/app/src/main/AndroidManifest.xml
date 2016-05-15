@@ -24,6 +24,11 @@
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SessionData"
+            android:label="@string/title_activity_session_data"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".SettingsActivity"></activity>
     </application>
 
 </manifest>

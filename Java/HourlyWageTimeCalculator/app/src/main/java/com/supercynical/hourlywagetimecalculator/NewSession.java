@@ -3,6 +3,7 @@ package com.supercynical.hourlywagetimecalculator;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageInstaller;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
@@ -17,11 +18,14 @@ import android.widget.Chronometer;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.FileOutputStream;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
+import java.util.Date;
 
 public class NewSession extends AppCompatActivity implements View.OnClickListener {
 
+    private SessionData sessionData = new SessionData();
     private Chronometer timer;
     private double wageAmt;
     private static final String TAG = "SessionMsg";
@@ -73,8 +77,8 @@ public class NewSession extends AppCompatActivity implements View.OnClickListene
         return true;
     }
 
-    // Placeholder for future settings
-    /*@Override
+    // Start Settings activity
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_settings:
@@ -83,7 +87,7 @@ public class NewSession extends AppCompatActivity implements View.OnClickListene
             default:
                 return super.onOptionsItemSelected(item);
         }
-    }*/
+    }
 
     @Override
     public void onClick(View v) {
@@ -91,6 +95,9 @@ public class NewSession extends AppCompatActivity implements View.OnClickListene
         TextView statusTextView = (TextView) findViewById(R.id.timerStatusText);
         TextView atRateText = (TextView) findViewById(R.id.atRateText);
         TextView totalChargeAmtText = (TextView) findViewById(R.id.totalChargeAmtText);
+
+        // Get hourly rate again
+        wageAmt = LoadSettings();
 
         // Switch statement for each button click
         switch(v.getId()) {
@@ -163,6 +170,11 @@ public class NewSession extends AppCompatActivity implements View.OnClickListene
                 }
 
                 totalChargeAmtText.setText("$" + String.valueOf(df.format(totalChargeAmt)));
+
+                // Now log the session
+                Date d = new Date();
+                sessionData.writeToFile(d + " - $" + String.valueOf(df.format(totalChargeAmt) + "\n"),
+                        NewSession.this);
                 break;
 
             // Clear Button
